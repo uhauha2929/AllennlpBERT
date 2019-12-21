@@ -1,2 +1,12 @@
 # AllennlpBERT
-Sentiment classifier using AllenNLP, Elmo, Bert
+Sentiment classifier using AllenNLP, ELMo, BERT
+
+2 classes, train: 800×2, dev: 200×2
+
+| model | acc | 0_p | 0_r | 0_f | 1_p | 1_r | 1_f |
+|:-----:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
+|GRU|0.697|0.716|0.655|0.684|0.681|0.739|0.708|
+|CNN|0.835|0.853|0.810|0.831|0.818|0.859|0.838|
+|ELMo+CNN|0.840|0.854|0.820|0.837|0.826|0.859|0.842|
+|BERT+CNN|0.890|0.868|0.920|0.893|0.914|0.859|0.886|
+

@@ -38,8 +38,7 @@ class TextClassificationCSVReader(DatasetReader):
             reader = csv.DictReader(text_file)
             next(reader)
             for row in reader:
-                # https://www.kaggle.com/crowdflower/twitter-airline-sentiment
-                yield self.text_to_instance(row.get('text', ''), row['airline_sentiment'])
+                yield self.text_to_instance(row.get('text', ''), row['label'])
 
     def _truncate(self, tokens):
         """

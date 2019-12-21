@@ -6,10 +6,10 @@
         "type": "single_id"
       }
     },
-    "max_sequence_length": 100
+    "max_sequence_length": 1000
   },
-  "train_data_path": "/home/yzhao/data/Tweets_train.csv",
-  "validation_data_path": "/home/yzhao/data/Tweets_test.csv",
+  "train_data_path": "data/train.csv",
+  "validation_data_path": "data/dev.csv",
   "model": {
     "type": "text_classifier_fscore_focal_loss",
     "text_field_embedder": {
@@ -25,7 +25,7 @@
       "type": "cnn",
       "embedding_dim": 200,
       "num_filters": 64,
-      "ngram_filter_sizes": [2]
+      "ngram_filter_sizes": [2,3,4]
     },
     "dropout": 0.2
   },
